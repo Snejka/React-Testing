@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-
 import { getAuthState } from 'selectors/selectors';
 
 export const requireAuth = (ChildComponent) => {
@@ -15,7 +14,6 @@ export const requireAuth = (ChildComponent) => {
         }
 
         componentDidMount() {
-            console.log(this.props)
             this.handleAuth();
         }
 

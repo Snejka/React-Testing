@@ -4,6 +4,7 @@ import CommentList from 'components/CommentList';
 import Root from 'Root';
 
 let wrapper;
+
 const initialState = {
     comments: ['Comment 1', 'Comment 2']
 }

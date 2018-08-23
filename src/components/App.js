@@ -11,7 +11,7 @@ export class App extends Component {
     renderButton = () => {
         const { auth, changeAuth } = this.props;
         return (
-            <button onClick={() => changeAuth(auth)}>
+            <button className='btn-auth' onClick={() => changeAuth(auth)}>
                 {auth ? 'Log Out' : 'Log In'}
             </button>
         );
@@ -19,7 +19,7 @@ export class App extends Component {
 
     renderHeader = () => {
         return (
-            <ul>
+            <ul className='navigation'>
                 <li>
                     <NavLink to='/'>Home</NavLink>
                 </li>
@@ -36,7 +36,7 @@ export class App extends Component {
             <div>
                 {this.renderHeader()}
                 <Route path='/post' component={CommentBox} />
-                <Route exact path='/' component={CommentList} />
+                <Route path='/' component={CommentList} />
             </div>
         )
     }

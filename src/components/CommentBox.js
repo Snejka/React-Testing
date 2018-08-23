@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { saveComment, fetchComments } from 'actions';
-import {requireAuth} from 'hoc/requireAuth';
+import { requireAuth } from 'hoc/requireAuth';
 
 export class CommentBox extends Component {
 
