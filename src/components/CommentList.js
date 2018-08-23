@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { getComments } from 'selectors/selectors';
 
@@ -10,9 +10,12 @@ export class CommentList extends Component {
 
     render () {
         return (
-            <ul>
-                {this.renderComments()}
-            </ul>
+            <Fragment>
+                <h4>Comment List</h4>
+                <ul>
+                    {this.renderComments()}
+                </ul>
+            </Fragment>
         )
     }
 }

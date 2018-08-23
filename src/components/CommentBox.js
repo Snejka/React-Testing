@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
-import { saveComment, fetchComments } from 'actions';
 import { connect } from 'react-redux';
+import { saveComment, fetchComments } from 'actions';
+import {requireAuth} from 'hoc/requireAuth';
 
 export class CommentBox extends Component {
 
@@ -40,5 +41,5 @@ const mapActionDispatch = {
     fetchComments
 }
 
-export default connect(null, mapActionDispatch)(CommentBox);
+export default connect(null, mapActionDispatch)(requireAuth(CommentBox));
 
