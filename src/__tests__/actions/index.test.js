@@ -46,12 +46,4 @@ describe('fetchComments', () => {
     it('has a correct type', () => {
         expect(action.type).toEqual(FETCH_COMMENTS);
     });
-
-    // it('has a correct payload', (done) => {
-    //     moxios.wait(() => {
-    //         // expect(action.payload).toEqual(mockedResponce.responce);
-    //         // expect(wrapper.find('li').length).toEqual(3);
-    //     })
-    //     // expect(action.payload).toEqual(mockedResponce.responce);
-    // });
 });
